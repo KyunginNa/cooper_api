@@ -5,7 +5,8 @@ Rails.application.routes.draw do
       resources :pings, only: [:index], constraints: { format: 'json' }
     end
     
-    namespace :v1 do
+    namespace :v1, defaults: { format: :json } do
+      resources :performance_data, only: [:create]
     end
   end
 end
