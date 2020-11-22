@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+## The Cooper Challange - API
 
-* System dependencies
+### Ruby version
+Ruby version: 2.5.1
 
-* Configuration
+### System dependencies
+- rack-cors
+- devise_token_auth
+- rspec-rails
+- shoulda-matchers
+- factory_bot_rails
+- pry-rails
+- pry-byebug
 
-* Database creation
+### Database creation
+```
+rails db:create
+```
 
-* Database initialization
+### Database initialization
+```
+rails db:migrate
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### How to run the test suite
+```
+rails generate rspec:install
+```
+```
+rspec 
+```
