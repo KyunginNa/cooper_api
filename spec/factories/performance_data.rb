@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :performance_data do
-    user { nil }
+    user 
     data { "" }
   end
 end
