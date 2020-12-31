@@ -10,6 +10,11 @@ class Api::PerformanceDataController < ApplicationController
     end
   end
 
+  def index
+    collection = current_user.performance_data
+    render json: { entries: collection }
+  end
+
   private
 
   def performance_data_params
