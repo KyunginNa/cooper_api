@@ -1,24 +1,45 @@
-# README
+# Cooper Test API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+This is a web application that allows users to calculate their cooper test result, save it, and view their past test results.
 
-Things you may want to cover:
+## The code
 
-* Ruby version
+- [Deployed App(Netlify)](https://cooper-test-result.netlify.app/)
+  - You can login with credentials below.  
+    Email: user@test.com  
+    password: 123123
+- [Github](https://github.com/KyunginNa/cooper_api)
+- [Client Repo](https://github.com/KyunginNa/cooper_client)
 
-* System dependencies
+## User stories
 
-* Configuration
+```
+As a visitor
+In order to know my cooper test result
+I would like to be able to calculate the result
+```
+```
+As a registered user
+In order to keep track of test results
+I would like to be able to save my test result
+```
+```
+As a registered user
+In order to check my healthy
+I would like to be able to view my past test results
+```
 
-* Database creation
+## Dependencies
+- bootsnap
+- rails
+- pg
+- puma
+- rack-cors
+- devise_token_auth
 
-* Database initialization
+## Acknowledgements
+- Course materials from [Craft Academy](https://www.craftacademy.se/english/)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+MIT License
